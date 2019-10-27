@@ -3,17 +3,25 @@
 # Abstract
 The demand for road transportation and the rate of motorization have continued to increase in all cities around the world. However, this increase demand and the preference for private transport are at the root of many problems, among which road accidents. In fact, the number of accidents has continued to increase, with disastrous consequences. 
 With this project, we aim to analyze the causes and effects of this phenomenon. We would like to investigate the correlation between the gravity level of a road accident and the components of the traffic system composed of the road, the driver and the vehicule. These components can be described by variables illustrating the drivers behavior, the attributes of the vehicle operated, the quality of the road and the climatic conditions. 
+
 The dataset we are going to use is extracted from an official [French open source database platform](https://www.data.gouv.fr/fr/). The dataset is provided by the [French road safety observatory (ONISR)](https://www.onisr.securite-routiere.interieur.gouv.fr/en) and is composed of more than 474,000 accidents from 2005 to 2018. It can be found [here](https://www.data.gouv.fr/en/datasets/base-de-donnees-accidents-corporels-de-la-circulation/) 
 
 # Research questions
-A list of research questions you would like to address during the project. 
+
+- Are there trends in the number of accidents over time?
+- Is there a link between driver (age, sexe, ..) and accidents ?
+- Are there roads which are more dangerous than others ?
+- What is the influence of radars on the accident rate in a given road ?
+- How much weather conditions influence accident rates ?
+- Are there some conditions (weather, location, ..) that can affect the dangerousness of accidents ?
 
 # Dataset
 
-The main dataset that we will use for this study is : [French road safety observatory (ONISR) dataset](https://www.data.gouv.fr/en/datasets/base-de-donnees-accidents-corporels-de-la-circulation/) 
+The main dataset that we will use for this study is : [French road safety observatory (ONISR) dataset](https://www.data.gouv.fr/en/datasets/base-de-donnees-accidents-corporels-de-la-circulation/).
+
 It includes, for each personal injury accident (i.e. an accident on a road open to public traffic) involving at least one vehicle and causing at least one victim requiring treatment, the following informations:
 
-### Characteristics:
+#### Characteristics:
 - Accident ID
 - Date and time
 - Localisation (Departement, town, type of road)
@@ -21,7 +29,7 @@ It includes, for each personal injury accident (i.e. an accident on a road open 
 - Collision type 
 - Geographical coordinates
 
-### Location:
+#### Location:
 - Accident ID
 - Road type (Highway, National road, Departmental road, ..)
 - Road number
@@ -29,7 +37,7 @@ It includes, for each personal injury accident (i.e. an accident on a road open 
 - Road informations (elevation, curve, road surface,
 - Type of infrastructure (tunnel, bridge, crossroads, ..)
 
-### Vehicles:
+#### Vehicles:
 - Accident ID
 - Vehicle ID
 - Traffic direction
@@ -40,7 +48,7 @@ It includes, for each personal injury accident (i.e. an accident on a road open 
 - Last driving maneuver before accident
 - Number of occupant
 
-### Users:
+#### Users:
 - Accident ID
 - Vehicle ID
 - User category (driver, passenger)
@@ -54,8 +62,20 @@ It includes, for each personal injury accident (i.e. an accident on a road open 
 
 We would like to couple this dataset with the radar annual flash recordings, weather conditions and road maintenance dates in order to testify some common sense assumptions. We expect our results to be visually presented as cards and time charts.
 
+Possible databases we could explore:
+
+* [Radar informations database](https://www.data.gouv.fr/en/datasets/radars-automatiques-bilans-annuels-du-nombre-de-flashs/)
+
 # A list of internal milestones up until project milestone 2
-Add here a sketch of your planning for the next project milestone.
+
+- Explore the quality of the data and check its consitancy over years (2018 seems to have more informations than previous years)
+- Plot the evolution of specific features over time
+- Get hands on map visualization tools to plot some insights on a map of France.
+- Develop helper functions to help use agregate our different data sources (link a road with radar informations, a location with weather informations)
+
 
 # Questions for TAa
-Add here some questions you have for us, in general or project-specific.
+
+- Should we use only one year of data (2018) or multiple years (2005->2018) ?
+- Can we use an API to gather some of our data ? If yes do you know a good one for weather data ?
+
