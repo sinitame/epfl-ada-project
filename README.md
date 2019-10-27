@@ -1,4 +1,4 @@
-# Title
+# Exploring French National Trafic injuries data
 
 # Abstract
 The demand for road transportation and the rate of motorization have continued to increase in all cities around the world. However, this increase demand and the preference for private transport are at the root of many problems, among which road accidents. In fact, the number of accidents has continued to increase, with disastrous consequences. 
