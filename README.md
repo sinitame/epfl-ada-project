@@ -66,7 +66,7 @@ Possible databases we could explore:
 
 * [Radar informations database](https://www.data.gouv.fr/en/datasets/radars-automatiques-bilans-annuels-du-nombre-de-flashs/)
 
-# A list of internal milestones up until project milestone 2
+# A list of internal milestones until milestone 2
 
 - Explore the quality of the data and check its consitancy over years (2018 seems to have more informations than previous years)
 - Plot the evolution of specific features over time
@@ -74,7 +74,7 @@ Possible databases we could explore:
 - Develop helper functions to help use agregate our different data sources (link a road with radar informations, a location with weather informations)
 
 
-# Questions for TAa
+# Questions for TAs
 
 - Should we use only one year of data (2018) or multiple years (2005->2018) ?
 - Can we use an API to gather some of our data ? If yes do you know a good one for weather data ?
