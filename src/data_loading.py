@@ -34,7 +34,7 @@ class YearLoader:
         self.year = year
         
         separator = ""
-        delimiter = ""
+        delimiter = ","
 
         # Handle exceptions in file paths
         if int(year) <= 2016:
@@ -42,15 +42,17 @@ class YearLoader:
         else:
             separator = "-"
 
-        
-        if int(year) == 2009:
-            delimiter = "\t"
-        else:
-            delimiter = ","
     
         self.dataframes = {}
         for k, v in self.default_mapping_csv.items():
-            self.dataframes.update({k:pd.read_csv("../data/{2}/{0}{1}{2}.csv".format(v, separator, year), encoding=self.default_encoding, delimiter=delimiter)})
+
+            # Handle exceptions in delimiter
+            if int(year) == 2009 and v == "caracteristiques":
+                delimiter = "\t"
+            else:
+                delimiter = ","
+
+            self.dataframes.update({k:pd.read_csv("../data/{2}/{0}{1}{2}.csv".format(v, separator, year),delimiter=delimiter, encoding=self.default_encoding)})
     
     def get_dataframe(self, name):
         return self.dataframes[name]
