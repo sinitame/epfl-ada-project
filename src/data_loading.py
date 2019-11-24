@@ -31,6 +31,8 @@ class YearLoader:
             "vehicles"       : "vehicules"
         }
 
+        self.year = year
+        
         separator = ""
         delimiter = ""
 
@@ -39,6 +41,7 @@ class YearLoader:
             separator = "_"
         else:
             separator = "-"
+
         
         if int(year) == 2009:
             delimiter = "\t"
