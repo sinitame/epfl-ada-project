@@ -63,8 +63,8 @@ def plot_pyramid_dead_alive_gender(df, female=False, male=True, figsize=(10,10),
 
     if male:
         fig_male, axes_male = plt.subplots(ncols=2, sharey=True, figsize=figsize)
-        axes_male[0].barh(pyramid_data['age_group'], pyramid_data['male_alive'], align='center', color='green')
-        axes_male[1].barh(pyramid_data['age_group'], pyramid_data['male_dead'], align='center', color='red')
+        axes_male[0].barh(df['age_group'], df['male_alive'], align='center', color='green')
+        axes_male[1].barh(df['age_group'], df['male_dead'], align='center', color='red')
         axes_male[0].set_xlim(xlim)
         axes_male[1].set_xlim(xlim)
         axes_male[0].invert_xaxis()
@@ -75,8 +75,8 @@ def plot_pyramid_dead_alive_gender(df, female=False, male=True, figsize=(10,10),
     if female:
         
         fig_female, axes_female = plt.subplots(ncols=2, sharey=True, figsize=figsize)
-        axes_female[0].barh(pyramid_data['age_group'], pyramid_data['female_alive'], align='center', color='green')
-        axes_female[1].barh(pyramid_data['age_group'], pyramid_data['female_dead'], align='center', color='red')
+        axes_female[0].barh(df['age_group'], df['female_alive'], align='center', color='green')
+        axes_female[1].barh(df['age_group'], df['female_dead'], align='center', color='red')
         axes_female[0].set_xlim(xlim)
         axes_female[1].set_xlim(xlim)
         axes_female[0].invert_xaxis()
