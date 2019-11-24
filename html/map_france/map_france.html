@@ -93,7 +93,7 @@
 			.attr('id', function(d) {return "d" + d.properties.code;})
 			.attr("d", path);
 
-		// Quantile scales map an input domain to a discrete range, 0...max(population) to 1...9
+		// Quantile scales map an input domain to a discrete range, 0...max(count) to 1...9
 		var quantile = d3.scaleQuantile()
 			.domain([0, d3.max(csv, function(e) { return +e.count; })])
 			.range(d3.range(9));
@@ -126,7 +126,7 @@
 					div.transition()        
 						.duration(200)      
 						.style("opacity", .9);
-					div.html("<b>Département : </b>" + e.dep + "<br>"
+					div.html("<b>Department : </b>" + e.dep + "<br>"
 							+ "<b>Trafic Injuries : </b>" + e.count + "<br>")
 						.style("left", (d3.event.pageX + 30) + "px")     
 						.style("top", (d3.event.pageY - 30) + "px");
