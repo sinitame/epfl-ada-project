@@ -68,14 +68,55 @@ Possible databases we could explore:
 
 # A list of internal milestones until milestone 2
 
-- Explore the quality of the data and check its consitancy over years (2018 seems to have more informations than previous years)
-- Plot the evolution of specific features over time
-- Get hands on map visualization tools to plot some insights on a map of France.
-- Develop helper functions to help use agregate our different data sources (link a road with radar informations, a location with weather informations)
+- [x] Explore the quality of the data and check its consitancy over years (2018 seems to have more informations than previous years -> Same informations, just a different way to categorize accidents gravity between 2018 and previous years)
+- [x] Plot the evolution of specific features over time (Number of accidents years/months)
+- [x] Get hands on map visualization tools to plot some insights on a map of France. (D3.js tutorials under test)
+- [x] Develop helper functions to help use agregate our different data sources (we decided to use only one dataset so no more needed)
+- [x] Develop functions to generate relevant data for each part of the data story (introduction, part 1, part 2, part 3, part 4)
+
+# Detailed plan of the Data Story
+
+The goal of our data story will be to explore some key insights of the dataset by making a story about how to reduce your chance of dying in a road accident. By reading the story, the reader will be able to see what are the main factors of road accidents regarding different aspects about drivers (age, sexe, ..), places where accidents occurs (type of roads, departements, ..), moments when accidents occurs (during the year, month, day or with specific weather conditions) and security equipements (if the driver had its belt, the impact of security equipment on the gravity of the accident, ..).
+
+At the end, the story will depict the "perfect" ride to avoid an accident by looking at the best possible case for each insight (the one having the less fatal accidents rate).
+
+### Introduction
+
+- Number of accidents (see if there is any trend) 
+- Evolution over the years
+- Gravity, number of injuries, ...
+
+### 1. Be the right person ..
+
+- Population Pyramids (driver): (Men, woman, age)
+
+- Types of vehicules
+
+### 2. At the right place ..
+
+- Accidents per regions/departments (map of France)
+
+- Injured vizualization in the car (Heatmap from the car top)
+
+### 3. At the right moment ..
+
+- Trends histograms
+
+- Weather conditions
+
+- Road conditions
+
+### 4. Security
+
+- Security equipement usage
+
+- Impact on the gravity of accidents
+
+#### Conclusion
+
+All the data we will use for the data story is available in [Milestone 2 Notebook](notebooks/milestone-2.ipynb)
+
+The script that we will use to generate all the data (will be available soon in) [Data generation script]()
 
 
-# Questions for TAs
-
-- Should we use only one year of data (2018) or multiple years (2005->2018) ?
-- Can we use an API to gather some of our data ? If yes do you know a good one for weather data ?
 
