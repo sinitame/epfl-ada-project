@@ -30,6 +30,8 @@ class YearLoader:
             "passengers"     : "usagers",
             "vehicles"       : "vehicules"
         }
+
+        self.year = year
         
         self.dataframes = {}
         for k, v in self.default_mapping_csv.items():
