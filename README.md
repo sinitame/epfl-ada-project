@@ -1,4 +1,4 @@
-# Exploring French National Trafic injuries data
+# Exploring French National Traffic injuries data
 
 # Abstract
 The demand for road transportation and the rate of motorization have continued to increase in all cities around the world. However, this increase demand and the preference for private transport are at the root of many problems, among which road accidents. In fact, the number of accidents has continued to increase, with disastrous consequences. 
@@ -9,7 +9,7 @@ The dataset we are going to use is extracted from an official [French open sourc
 # Research questions
 
 - Are there trends in the number of accidents over time?
-- Is there a link between driver (age, sexe, ..) and accidents ?
+- Is there a link between driver (age, gender, ..) and accidents ?
 - Are there roads which are more dangerous than others ?
 - What is the influence of radars on the accident rate in a given road ?
 - How much weather conditions influence accident rates ?
@@ -24,7 +24,7 @@ It includes, for each personal injury accident (i.e. an accident on a road open 
 #### Characteristics:
 - Accident ID
 - Date and time
-- Localisation (Departement, town, type of road)
+- Localization (Department, town, type of road)
 - Weather condition
 - Collision type 
 - Geographical coordinates
@@ -43,7 +43,7 @@ It includes, for each personal injury accident (i.e. an accident on a road open 
 - Traffic direction
 - Vehicle category (motorcycle, car, bus, scooter, ...)
 - Fixed obstacle hit (tree, metal slide, wall, ...
-- Mobil obstacle hit (pedestrien, vehicle, animal, ..)
+- Mobil obstacle hit (pedestrian, vehicle, animal, ..)
 - Initial shock point (front, back, ..)
 - Last driving maneuver before accident
 - Number of occupant
@@ -53,12 +53,12 @@ It includes, for each personal injury accident (i.e. an accident on a road open 
 - Vehicle ID
 - User category (driver, passenger)
 - Accident gravity (dead, injured patient, light injured, ..)
-- Sexe
+- Gender
 - Year of birth
 - Reason of traveling (Home - work, Home - school, ..)
 - Existence of a safety equipment (belt, helmet, ..)
-- Use of a safety equipement (yes, no)
-- Pedestrien informations (localisation, if moving or not, ..)
+- Use of a safety equipment (yes, no)
+- Pedestrian informations (localization, if moving or not, ..)
 
 We would like to couple this dataset with the radar annual flash recordings, weather conditions and road maintenance dates in order to testify some common sense assumptions. We expect our results to be visually presented as cards and time charts.
 
@@ -68,10 +68,10 @@ Possible databases we could explore:
 
 # A list of internal milestones until milestone 2
 
-- [x] Explore the quality of the data and check its consitancy over years (2018 seems to have more informations than previous years -> Same informations, just a different way to categorize accidents gravity between 2018 and previous years)
+- [x] Explore the quality of the data and check its consistency over years (2018 seems to have more informations than previous years -> Same informations, just a different way to categorize accidents gravity between 2018 and previous years)
 - [x] Plot the evolution of specific features over time (Number of accidents years/months)
 - [x] Get hands on map visualization tools to plot some insights on a map of France. (D3.js tutorials under test)
-- [x] Develop helper functions to help use agregate our different data sources (we decided to use only one dataset so no more needed)
+- [x] Develop helper functions to help use aggregate our different data sources (we decided to use only one dataset so no more needed)
 - [x] Develop functions to generate relevant data for each part of the data story (introduction, part 1, part 2, part 3, part 4)
 
 # Detailed plan of the Data Story
@@ -88,15 +88,15 @@ At the end, the story will depict the "perfect" ride to avoid an accident by loo
 
 ### 1. Be the right person ..
 
-- Population Pyramids (driver): (Men, woman, age)
+- Population Pyramids (passengers and drivers): (Men, woman, age)
 
-- Types of vehicules
+- Types of vehicles
 
 ### 2. At the right place ..
 
 - Accidents per regions/departments (map of France)
 
-- Injuries vizualization in the car (Heatmap from the car top)
+- Injuries visualization in the car (Heat-map from the car top)
 
 ### 3. At the right moment ..
 
@@ -108,7 +108,7 @@ At the end, the story will depict the "perfect" ride to avoid an accident by loo
 
 ### 4. Security
 
-- Security equipement usage
+- Security equipment usage
 
 - Impact on the gravity of accidents
 
