@@ -96,7 +96,7 @@ At the end, the story will depict the "perfect" ride to avoid an accident by loo
 
 - Accidents per regions/departments (map of France)
 
-- Injured vizualization in the car (Heatmap from the car top)
+- Injuries vizualization in the car (Heatmap from the car top)
 
 ### 3. At the right moment ..
 
