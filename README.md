@@ -114,8 +114,8 @@ At the end, the story will depict the "perfect" ride to avoid an accident by loo
 
 #### Conclusion
 
-All the data we will use for the data story is available in [Milestone 2 Notebook](notebooks/milestone-3.ipynb)
-
+All the data we will use for the data story is available in [Milestone 3 Notebook](notebooks/milestone-3.ipynb)
+The link to our Data Story is [Data Story](https://epfl-ada-project.github.io/)
 The script that we will use to generate all the data (will be available soon in) [Data generation script]()
 
 # Contributions
