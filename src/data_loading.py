@@ -52,7 +52,7 @@ class YearLoader:
             else:
                 delimiter = ","
 
-            self.dataframes.update({k:pd.read_csv("../data/{2}/{0}{1}{2}.csv".format(v, separator, year),delimiter=delimiter, encoding=self.default_encoding)})
+            self.dataframes.update({k:pd.read_csv("../../data/{2}/{0}{1}{2}.csv".format(v, separator, year),delimiter=delimiter, encoding=self.default_encoding)})
     
     def get_dataframe(self, name):
         return self.dataframes[name]
