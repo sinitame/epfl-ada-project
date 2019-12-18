@@ -118,5 +118,33 @@ All the data we will use for the data story is available in [Milestone 2 Noteboo
 
 The script that we will use to generate all the data (will be available soon in) [Data generation script]()
 
+# Contributions
+
+#### Ambroise
+- Development of helpers to visualize and generate CSV to extract insights
+- Design of the data story timeline
+- Development of the website
+- Verification of milestone 2
+- Plot interactive map
+
+#### Emrick
+- Development of helpers to visualize and generate CSV to extract insights
+- Generation of plots for the website
+- Design of the website figures
+- Design of the data story timeline
+- Readme
+
+#### Gautier
+- Design of the data story timeline
+- Development of helpers to load the data and extract insights
+- Verification of milestone 3
+- Text redaction of the data story
+- Clean the code for final project rendering
+
+#### Linah
+- Compute some stats insights
+- Design of the data story timeline
+- Abstract of the readme
+
 
 
