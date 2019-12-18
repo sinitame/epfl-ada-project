@@ -114,7 +114,7 @@ At the end, the story will depict the "perfect" ride to avoid an accident by loo
 
 #### Conclusion
 
-All the data we will use for the data story is available in [Milestone 2 Notebook](notebooks/milestone-2.ipynb)
+All the data we will use for the data story is available in [Milestone 2 Notebook](notebooks/milestone-3.ipynb)
 
 The script that we will use to generate all the data (will be available soon in) [Data generation script]()
 
