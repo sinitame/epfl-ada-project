@@ -11,7 +11,6 @@ The dataset we are going to use is extracted from an official [French open sourc
 - Are there trends in the number of accidents over time?
 - Is there a link between driver (age, gender, ..) and accidents ?
 - Are there roads which are more dangerous than others ?
-- What is the influence of radars on the accident rate in a given road ?
 - How much weather conditions influence accident rates ?
 - Are there some conditions (weather, location, ..) that can affect the dangerousness of accidents ?
 
@@ -60,9 +59,11 @@ It includes, for each personal injury accident (i.e. an accident on a road open 
 - Use of a safety equipment (yes, no)
 - Pedestrian informations (localization, if moving or not, ..)
 
-We would like to couple this dataset with the radar annual flash recordings, weather conditions and road maintenance dates in order to testify some common sense assumptions. We expect our results to be visually presented as cards and time charts.
+Our results are visually presented as cards and time charts.
 
-Possible databases we could explore:
+We wanted to couple this dataset with the radar annual flash recordings, weather conditions and road maintenance dates in order to testify some common sense assumptions. However, after a deeper look on the dataset, we noticed that we had enough data to explore for our data story.
+
+Possible databases we could have explored:
 
 * [Radar informations database](https://www.data.gouv.fr/en/datasets/radars-automatiques-bilans-annuels-du-nombre-de-flashs/)
 
@@ -115,7 +116,7 @@ At the end, the story will depict the "perfect" ride to avoid an accident by loo
 #### Conclusion
 
 All the data we will use for the data story is available in [Milestone 3 Notebook](notebooks/milestone-3.ipynb)  
-The script that we will use to generate all the data (will be available soon in) [Data generation script]()  
+The script that we will use to generate and plot all the data [Data generation script](src/)  
 
 The link to our Data Story is [Data Story](https://epfl-ada-project.github.io/)  
 
@@ -144,8 +145,10 @@ The link to our Data Story is [Data Story](https://epfl-ada-project.github.io/)
 
 #### Linah
 - Compute some stats insights
+- Completion of milestone 3
 - Design of the data story timeline
-- Abstract of the readme
+- Text redaction of the data story
+- Abstract and verification of the readme
 
 
 

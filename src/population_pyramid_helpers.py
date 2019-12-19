@@ -84,4 +84,46 @@ def plot_pyramid_dead_alive_gender(df, female=False, male=True, figsize=(10,10),
         axes_female[1].legend(['female dead'])
 
         plt.show()
+        
+def plot_norm_pyramid_dead_alive_gender(df, female=False, male=True, figsize=(10,10), xlim = None):
+    """Plot population pyramid (male_dead, male_alive, female_dead, female_alive) for each age group.
+
+    Parameters
+    ----------
+    df : pandas.DataFrame
+        pyramid_data (get_dead_alive_gender_df() function).
+    female : bool
+        show female plot.
+    male : bool
+        show male plot.
+    figsize : tuple
+        (x, y) figsize for plots.
+    xlim : tuple
+        (min,max) x axis limits.
+    """
+
+    if male:
+        fig_male, axes_male = plt.subplots(ncols=2, sharey=True, figsize=figsize)
+        axes_male[0].barh(df['age_group'], df['male_alive']/(df['male_alive'].sum()+df['male_dead'].sum()), align='center', color='green')
+        axes_male[1].barh(df['age_group'], df['male_dead']/(df['male_alive'].sum()+df['male_dead'].sum()), align='center', color='red')
+        axes_male[0].set_xlim(xlim)
+        axes_male[1].set_xlim(xlim)
+        axes_male[0].invert_xaxis()
+        axes_male[0].legend(['male alive'])
+        axes_male[1].legend(['male dead'])
+        plt.show()
+        
+    if female:
+        
+        fig_female, axes_female = plt.subplots(ncols=2, sharey=True, figsize=figsize)
+        axes_female[0].barh(df['age_group'], df['female_alive']/(df['female_alive'].sum()+df['female_dead'].sum()), align='center', color='green')
+        axes_female[1].barh(df['age_group'], df['female_dead']/(df['female_alive'].sum()+df['female_dead'].sum()), align='center', color='red')
+        axes_female[0].set_xlim(xlim)
+        axes_female[1].set_xlim(xlim)
+        axes_female[0].invert_xaxis()
+        axes_female[0].legend(['female alive'])
+        axes_female[1].legend(['female dead'])
+
+        plt.show()
+
 
